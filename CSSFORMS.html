@@ -8,9 +8,10 @@
     <title>FORMS WITH CSS</title>
     <style>
         div {
-            background-color: red;
-            width: 200px;
-            border: 20px dotted black;
+            background-image: url("/HTMLASSERTS/sky.jfif");
+            background-image: fixed;
+            width: 400px;
+            border: 20px solid palevioletred;
             padding: 20px;
             margin: 30px;
         }
@@ -19,58 +20,58 @@
 
 <body>
     <div>
-    <form>
-        <h1 style="text-align: center;">Employee Registration Form</h1>
-        <form action="https://www.cgvakindia.com/" method="Post">
-            <fieldset>
-                <legend>EMPLOYEE REGISTRATION FORM</legend>
-                <label>FIRST-NAME</label>
-                <input type="text" name="fname" required />
-                <br>
-                <label>LAST-NAME</label>
-                <input type="text" name="lname" required />
-                <br>
-                <label>GENDER</label>
-                <br>
-                <input type="radio" name="GENDER" value="MALE" required />MALE<br>
-                <input type="radio" name="GENDER" value="FEMALE" required />FEMALE<br>
-                <br <label>ADDRESS</label>
-                <textarea></textarea>
-                <br>
-                <label>EMAIL</label>
-                <input type="email" name="EMAIL" required />
-                <br>
-                <label>PASSWORD</label>
-                <input type="checkbox" name="PASSWORD" required />
-                <input type="password" name="PASSWORD" required />
-                <br>
-                <label>Mobile Number</label>
-                <input type="tel" pattern="[0-9]{10}" required>
-                <br>
-                <label>Telephone Number</label>
-                <input type="tel" pattern="[1-3]{3}-[1-4]{4}-[1-3]{3}" required>
-                <br>
-                <label>DATE AND TIME</label>
-                <input type="date" required />Select Date<br><br>
-                <br>
-                <input type="datetime-local" required />Select Date and Time<br><br>
-                <br>
-                <label>PROFESSION</label><br>
-                <select name="PROFESSION">
-                    <optgroup label="FRONT END DEVELOPER">
-                        <option>Html</option>
-                        <option>Css</option>
-                    </optgroup>
-                    <optgroup label="DATABASE">
-                        <option>Sql</option>
-                        <option>Oracle</option>
-                    </optgroup>
-                </select><br><br>
-                <br>
-                <input type="submit" value="Register">
-            </fieldset>
-        </form>
-        </div>
-        </body>
+        <form>
+            <h1 style="text-align: center;">Employee Registration Form</h1>
+            <form action="https://www.cgvakindia.com/" method="Post">
+                <fieldset>
+                    <legend>EMPLOYEE REGISTRATION FORM</legend>
+                    <label>FIRST-NAME</label>
+                    <input type="text" name="fname" required />
+                    <br>
+                    <label>LAST-NAME</label>
+                    <input type="text" name="lname" required />
+                    <br>
+                    <label>GENDER</label>
+                    <br>
+                    <input type="radio" name="GENDER" value="MALE" required />MALE<br>
+                    <input type="radio" name="GENDER" value="FEMALE" required />FEMALE<br>
+                    <br <label>ADDRESS</label>
+                    <textarea></textarea>
+                    <br>
+                    <label>EMAIL</label>
+                    <input type="email" name="EMAIL" required />
+                    <br>
+                    <label>PASSWORD</label>
+                    <input type="checkbox" name="PASSWORD" required />
+                    <input type="password" name="PASSWORD" required />
+                    <br>
+                    <label>Mobile Number</label>
+                    <input type="tel" pattern="[0-9]{10}" required>
+                    <br>
+                    <label>Telephone Number</label>
+                    <input type="tel" pattern="[1-3]{3}-[1-4]{4}-[1-3]{3}" required>
+                    <br>
+                    <label>DATE AND TIME</label>
+                    <input type="date" required />Select Date<br><br>
+                    <br>
+                    <input type="datetime-local" required />Select Date and Time<br><br>
+                    <br>
+                    <label>PROFESSION</label><br>
+                    <select name="PROFESSION">
+                        <optgroup label="FRONT END DEVELOPER">
+                            <option>Html</option>
+                            <option>Css</option>
+                        </optgroup>
+                        <optgroup label="DATABASE">
+                            <option>Sql</option>
+                            <option>Oracle</option>
+                        </optgroup>
+                    </select><br><br>
+                    <br>
+                    <input type="submit" value="Register">
+                </fieldset>
+            </form>
+    </div>
+</body>
 
 </html>
