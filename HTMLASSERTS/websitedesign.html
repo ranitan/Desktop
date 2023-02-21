@@ -7,10 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSITE</title>
     <style>
-        p :hover{
-            opacity:1.0;
+        .div2 img {
+            border-radius: 10px;
+            max-width: none;
+            box-shadow: 5px 5px black;
         }
-         a:link {
+
+        .div3 {
+            margin-bottom: 100px;
+            width: auto;
+            border: white;
+        }
+
+        a:link {
             color: red;
             text-decoration: none;
         }
@@ -28,12 +37,18 @@
             color: blue;
             background-color: lightgreen;
         }
-        h3{
-             margin-top: 30px;
+
+        h3 {
+            margin-top: 5px;
         }
+
         .div2 li {
             display: inline-block;
-            padding: 30px;
+            padding: 10px;
+        }
+
+        .div2 {
+            display: inline;
         }
 
         header {
@@ -42,8 +57,13 @@
 
         }
 
+        h6 {
+            margin-top: 0%;
+            float: right;
+        }
+
         body {
-            
+
             background: linear-gradient(to right, #A8CABA, #5D4157);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -56,10 +76,22 @@
 
         }
 
-        iframe {
+        /* .a1{
+            float: left;
+        }
+        .a2{
             float: right;
-            margin-top: 10px;
-            margin-left: 10px;
+        }
+        .a3{
+            float: left;
+        }
+        .a4{
+            float: right;
+        }
+         */
+
+        .map {
+             margin-top: 50%;
         }
 
         .li li {
@@ -69,6 +101,7 @@
 </head>
 
 <body>
+    <h6><i><a href="CSSFORMS.html">login</a></i></h6>
     <header>
         <caption><i>Welcome to Infosoft</i></caption>
         <img src="logo1.png" height="50" width="50" style="float:left;">
@@ -87,36 +120,46 @@
                                   Let us take you into a deeper experience, make a moment a lasting conveyable memory</i></b></pre>
 
         <img src="black.jfif" width="100%" height="400px" style="margin-top: 15px;">
-        <!--<iframe width="100" height="100" src="https://www.youtube.com/embed/zZ0Z5wSka6c">
-        </iframe>
-        <iframe width="100" height="100" src="https://www.cgvakindia.com/">
-        </iframe><!-->
     </div>
+    
+    
     <div class="div2">
         <h3><i>Special courses.</i></h3>
         <ul class="ul2">
-            <li><i><a href="https://www.w3schools.com/html/html_intro.asp">HTML</a></i>
-                <p id="para1"><img  class ="img1"src="HTML.png" style="width:200px;height:100px;"></p>
-            </li>
-            <li><i><a href="https://www.java.com/">JAVA</a></i>
-                <p id="para2"><img class ="img1" src="java.jpg" style="width:200px;height:100px;"></p>
-            </li>
-            <li><i><a href="https://cplusplus.com/">c++</a></i>
-                <p id="para3"><img  class ="img1" src="c++.jfif" style="width:200px;height:100px;"></p>
-            </li>
-            <li><i><a href="https://www.w3schools.com/css/css_website_layout.asp">CSS</a></i>
-                <p id="para4"><img  class ="img1" src="CSS.jpg" style="width:200px;height:100px;"></p>
-            </li>
-            <li><i><a href="https://getbootstrap.com/">BOOTSTRAP</a></i>
-                <p id="para5"><img  class ="img1" src="BOOTSTAP.jfif" style="width:200px;height:100px;"></p>
-            </li>
-            <li><i><a href="https://jquery.com/">JQUERY</a></i>
-                <p id="para6"><img  class ="img1" src="JQUERY.jfif" style="width:200px;height:100px;"></p>
-            </li>
+            <div class="a1">
+                <h3>HTML</h3>
+                <li><i><a href="https://www.w3schools.com/html/html_intro.asp"><img src="HTML.png" width="200px"
+                                height="100px" ></a></i>
+                </li>
+            </div>
+            <div class="a2">
+                <h3>JAVA</h3>
+                <li><i><a href="https://www.java.com/"><img src="java.jpg" width="200px" height="100px"></a></i>
+                </li>
+            </div>
+            <div class="a3">
+                <h3>C++</h3>
+                <li><i><a href="https://cplusplus.com/"><img src="c++.jfif" width="200px" height="100px"></a></i>
+                </li>
+            </div>
+            <div class="a4">
+                <h3>CSS</h3>
+                <li><i><a href="https://www.w3schools.com/css/css_website_layout.asp"><img src="CSS.jpg" width="200px"
+                                height="100px"></a></i>
+                </li>
+            </div>
+            <div class="a5">
+                <h3>BOOTSTRAP</h3>
+                <li><i><a href="https://getbootstrap.com/"><img src="BOOTSTAP.jfif" width="200px"
+                                height="100px"></a></i></li>
+            </div>
+            <div class="a6">
+                <h3>JQUERY</h3>
+                <li><i><a href="https://jquery.com/"><img src="JQUERY.jfif" width="200px" height="100px"></a></i>
+                </li>
+            </div>
         </ul>
     </div>
-
-
 
 </body>
 
