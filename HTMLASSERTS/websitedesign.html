@@ -7,12 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSITE</title>
     <style>
-        .div2 img {
-            border-radius: 10px;
-            max-width: none;
-            box-shadow: 5px 5px black;
-        }
-
         .div3 {
             margin-bottom: 100px;
             width: auto;
@@ -40,21 +34,42 @@
 
         h3 {
             margin-top: 5px;
+            color: white;
+            font-style: italic;
+        
+        
         }
+        
 
-        .div2 li {
+        .ul2 li {
             display: inline-block;
-            padding: 10px;
+            margin-left: 5px 5px;
+            padding: 10px 20px 20px 20px;
         }
 
-        .div2 {
-            display: inline;
+        .ul2 img {
+
+            border-radius: 40px;
+            height: 150px;
+            shape-margin: 30px;
+            shape-rendering: 40px;
+            box-shadow: 5px 5px black;
+            border-color: #000000;
+
         }
 
         header {
             text-align: center;
+            padding: 30px;
+            margin: 10px 20px;
+            color: white;
 
+        }
 
+        figcaption {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: white;
         }
 
         h6 {
@@ -64,8 +79,12 @@
 
         body {
 
-            background: linear-gradient(to right, #A8CABA, #5D4157);
+            /* background: linear-gradient(to right, #A8CABA, #5D4157);
+            W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+            background: linear-gradient(to right, #434343, #000000);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
         }
 
@@ -76,26 +95,18 @@
 
         }
 
-        /* .a1{
-            float: left;
-        }
-        .a2{
-            float: right;
-        }
-        .a3{
-            float: left;
-        }
-        .a4{
-            float: right;
-        }
-         */
-
-        .map {
-             margin-top: 50%;
-        }
-
         .li li {
             display: inline-block;
+            padding:8px;
+        }
+        footer{
+            text-align:center ;
+            color: azure;
+            margin-top: 10%;
+            background-color: rgb(38, 14, 59,20);
+            font-size: xx-small;
+            position: sticky;
+            padding:2px;
         }
     </style>
 </head>
@@ -119,47 +130,50 @@
 <b> <i>                            Power to Creative Anything......
                                   Let us take you into a deeper experience, make a moment a lasting conveyable memory</i></b></pre>
 
-        <img src="black.jfif" width="100%" height="400px" style="margin-top: 15px;">
+        <img src="black.jfif" width="100%" height="300px" style="margin-top: 0%;">
     </div>
-    
-    
-    <div class="div2">
-        <h3><i>Special courses.</i></h3>
-        <ul class="ul2">
-            <div class="a1">
-                <h3>HTML</h3>
-                <li><i><a href="https://www.w3schools.com/html/html_intro.asp"><img src="HTML.png" width="200px"
-                                height="100px" ></a></i>
-                </li>
-            </div>
-            <div class="a2">
-                <h3>JAVA</h3>
-                <li><i><a href="https://www.java.com/"><img src="java.jpg" width="200px" height="100px"></a></i>
-                </li>
-            </div>
-            <div class="a3">
-                <h3>C++</h3>
-                <li><i><a href="https://cplusplus.com/"><img src="c++.jfif" width="200px" height="100px"></a></i>
-                </li>
-            </div>
-            <div class="a4">
-                <h3>CSS</h3>
-                <li><i><a href="https://www.w3schools.com/css/css_website_layout.asp"><img src="CSS.jpg" width="200px"
-                                height="100px"></a></i>
-                </li>
-            </div>
-            <div class="a5">
-                <h3>BOOTSTRAP</h3>
-                <li><i><a href="https://getbootstrap.com/"><img src="BOOTSTAP.jfif" width="200px"
-                                height="100px"></a></i></li>
-            </div>
-            <div class="a6">
-                <h3>JQUERY</h3>
-                <li><i><a href="https://jquery.com/"><img src="JQUERY.jfif" width="200px" height="100px"></a></i>
-                </li>
-            </div>
-        </ul>
-    </div>
+    <h3><i>Special courses.</i></h3>
+    <ul class="ul2">
+        <!-- <h3>HTML</h3> -->
+        <li><i><a href="https://www.w3schools.com/html/html_intro.asp"><img src="HTML.png" width="200px"
+                        height="100px"></a></i>
+            <figcaption>HTML</figcaption>
+        </li>
+
+
+        <!-- <h3>JAVA</h3> -->
+        <li><i><a href="https://www.java.com/"><img src="java.jpg" width="200px" height="100px"></a></i>
+            <figcaption>JAVA</figcaption>
+        </li>
+
+
+        <!-- <h3>C++</h3> -->
+        <li><i><a href="https://cplusplus.com/"><img src="c++.jfif" width="200px" height="100px"></a></i>
+            <figcaption>C++</figcaption>
+        </li>
+
+        <!-- <h3>CSS</h3> -->
+        <li><i><a href="https://www.w3schools.com/css/css_website_layout.asp"><img src="CSS.jpg" width="200px"
+                        height="100px"></a></i>
+            <figcaption>CSS</figcaption>
+        </li>
+
+
+        <!-- <h3>BOOTSTRAP</h3> -->
+        <li><i><a href="https://getbootstrap.com/"><img src="BOOTSTAP.jfif" width="200px" height="100px"></a></i>
+            <figcaption>BOOTSTRAP</figcaption>
+        </li>
+
+
+        <!-- <h3>JQUERY</h3> -->
+        <li><i><a href="https://jquery.com/"><img src="JQUERY.jfif" width="200px" height="100px"></a></i>
+            <figcaption>JQUERY</figcaption>
+        </li>
+</ul>
+<footer>
+    &#169;
+    infosoft@gmail.com
+</footer>
 
 </body>
 

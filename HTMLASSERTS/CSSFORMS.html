@@ -7,17 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMS WITH CSS</title>
     <style>
+        h1 {
+            text-align: center;
+        }
+
         div {
 
-           
-            background: linear-gradient(to right, #cbb4d4, #20002c);
+
+            
+            background: linear-gradient(to right, #434343, #000000);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-            background-image: fixed;
-            width: 600px;
-            outline-style: auto;
-            padding: 20px;
-            margin: 30px;
+            display: block;
+            padding: 50px 10px;
+            border-radius: 20px;
+            font-size: x-small;
+            font-style: italic;
+            margin-block: 10px;
+            margin-inline-end: 20px;
+            display: block;
+        }
+
+        #btn {
+            margin-top: 10px;
+            float: none;
         }
     </style>
 </head>
@@ -25,7 +38,7 @@
 <body>
     <div>
         <form>
-            <h1 style="text-align: center;">Employee Registration Form</h1>
+            <h1>Employee Registration Form</h1>
             <form action="https://www.infosoft-inc.com/" method="Post">
 
                 <legend></legend>
@@ -79,8 +92,9 @@
                     </optgroup>
                 </select><br><br>
                 <br>
-                <input type="submit" value="Register">
-         </form>
+                <!-- <input type="submit" value="Register"> -->
+                <button id="btn">submit </button>
+            </form>
     </div>
 </body>
 
