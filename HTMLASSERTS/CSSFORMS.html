@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMS WITH CSS</title>
+
     <style>
         h1 {
             text-align: center;
@@ -14,7 +15,7 @@
         div {
 
 
-            
+
             background: linear-gradient(to right, #434343, #000000);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -36,14 +37,32 @@
 </head>
 
 <body>
+    <!-- <script>
+        function validateform() {
+            var inpName = document.myform.fname.value;
+            var passwd = document.myform.pword.value;
+
+            if (inpName == null || inpName == "") {
+                alert("Name can't be blank");
+                return false;
+            }
+
+            else if (passwd.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+            else
+                document.write("Valid User name and Password");
+        }  
+    </script> -->
     <div>
-        <form>
+        <form name="myform" id="ff" method="post" action="" >
             <h1>Employee Registration Form</h1>
             <form action="https://www.infosoft-inc.com/" method="Post">
 
                 <legend></legend>
                 <label>FIRST-NAME</label>
-                <input type="text" name="fname" required />
+                <input type="text" name="fname" />
                 <br>
                 <br>
                 <label>LAST-NAME</label>
@@ -57,7 +76,7 @@
                 <br>
                 <br>
                 <label>ADDRESS</label>
-                <textarea></textarea>
+                <textarea name="addres"></textarea>
                 <br>
                 <br>
                 <label>EMAIL</label>
@@ -65,20 +84,19 @@
                 <br>
                 <br>
                 <label>PASSWORD</label>
-                <input type="checkbox" name="PASSWORD" required />
-                <input type="password" name="PASSWORD" required />
+                <input type="password" name="pword" required />
                 <br>
                 <br>
                 <label>Mobile Number</label>
-                <input type="tel" pattern="[0-9]{10}" required>
+                <input type="tel" pattern="[0-9]{10}" name="mobileno" required>
                 <br>
                 <br>
                 <label>Telephone Number</label>
-                <input type="tel" pattern="[1-3]{3}-[1-4]{4}-[1-3]{3}" required>
+                <input type="tel" pattern="[1-3]{3}-[1-4]{4}-[1-3]{3}" name="teleno"required>
                 <br>
                 <br>
                 <label>DATE AND TIME</label>
-                <input type="date" required />Select Date<br><br>
+                <input type="date" name="date and time" required />Select Date<br><br>
                 <br>
                 <label>PROFESSION</label><br>
                 <select name="PROFESSION">
@@ -92,9 +110,34 @@
                     </optgroup>
                 </select><br><br>
                 <br>
-                <!-- <input type="submit" value="Register"> -->
-                <button id="btn">submit </button>
+                <input type="submit" name="submitt" onclick="disp(myform)">
             </form>
+            <script> 
+             function disp()
+             {
+             const forms=document.getElementById("ff");
+            const f1name=document.forms.element[fname].value;
+            const l1name=document.forms.element[lname].value;
+             const gen=document.forms.element[GENDER].value;
+             const add=document.forms.element[addres].value;
+             const email=document.forms.element[EMAIL].value;
+             const pwd=document.forms.element[pword].value;
+             const mno=document.forms.element[mobileno].value;
+            const tno=document.forms.element[teleno].valuee
+             const prof=document.forms.element[PROFESSION].value;
+    
+                 document.write("<h2>FIRSTNAME :</h2>" + (f1name));
+                document.write("<h2>LASTTNAME :</h2>" + (l2name));
+                document.write("<b>GENDER :</b>" + (gen));
+                document.write("<b>ADDRESS :<b>" + (add));
+                 document.write("<b>EMAIL :<b>" + (email));
+                document.write("<b>PASSWORD:<b>" + (pwd));
+                document.write("<b>MOBILE NUMBER :<b>" + (mno));
+                 document.write("<b>TELEPHONE NUMBER:<b>" + (tno));
+                 document.write("<b>DATE AND TIME:</b>" + (Dat));
+                document.write("<b>PROFESSION :<b>" + (prof));
+                }
+           </script>
     </div>
 </body>
 
