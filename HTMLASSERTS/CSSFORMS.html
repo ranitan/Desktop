@@ -56,9 +56,9 @@
         }  
     </script> -->
     <div>
-        <form name="myform" id="ff" method="post" action="" >
+        <form name="myform" id="ff" method="post" action="cgvakindia.com" >
             <h1>Employee Registration Form</h1>
-            <form action="https://www.infosoft-inc.com/" method="Post">
+            
 
                 <legend></legend>
                 <label>FIRST-NAME</label>
@@ -110,32 +110,34 @@
                     </optgroup>
                 </select><br><br>
                 <br>
-                <input type="submit" name="submitt" onclick="disp(myform)">
+                <input type="submit" name="submit">
+                <br>
+                <br>
+                <input type="submit" name="printdetails" value="printdetails" onclick="disp(ff)">
             </form>
             <script> 
              function disp()
              {
              const forms=document.getElementById("ff");
-            const f1name=document.forms.element[fname].value;
-            const l1name=document.forms.element[lname].value;
-             const gen=document.forms.element[GENDER].value;
-             const add=document.forms.element[addres].value;
-             const email=document.forms.element[EMAIL].value;
-             const pwd=document.forms.element[pword].value;
-             const mno=document.forms.element[mobileno].value;
-            const tno=document.forms.element[teleno].valuee
-             const prof=document.forms.element[PROFESSION].value;
+            const f1name=forms.elements["fname"].value;
+            const l1name=forms.elements["lname"].value;
+             const gen=forms.elements["GENDER"].value;
+             const add=forms.elements["addres"].value;
+             const email=forms.elements["EMAIL"].value;
+             const pwd=forms.elements["pword"].value;
+             const mno=forms.elements["mobileno"].value;
+            const tno=forms.elements["teleno"].valuee
+             const prof=forms.elements["PROFESSION"].value;
     
-                 document.write("<h2>FIRSTNAME :</h2>" + (f1name));
-                document.write("<h2>LASTTNAME :</h2>" + (l2name));
-                document.write("<b>GENDER :</b>" + (gen));
-                document.write("<b>ADDRESS :<b>" + (add));
-                 document.write("<b>EMAIL :<b>" + (email));
-                document.write("<b>PASSWORD:<b>" + (pwd));
-                document.write("<b>MOBILE NUMBER :<b>" + (mno));
-                 document.write("<b>TELEPHONE NUMBER:<b>" + (tno));
-                 document.write("<b>DATE AND TIME:</b>" + (Dat));
-                document.write("<b>PROFESSION :<b>" + (prof));
+                 document.write("<b>FIRSTNAME :</b>" + (f1name + "<br/>"));
+                document.write("<b>LASTTNAME :</b>" + (l1name+ "<br/>"));
+                document.write("<b>GENDER :</b>" + (gen + "<br/>"));
+                document.write("<b>ADDRESS :<b>" + (add +" <br/>"));
+                 document.write("<b>EMAIL :<b>" + (email + "<br/>"));
+                document.write("<b>PASSWORD:<b>" + (pwd + "<br/>"));
+                document.write("<b>MOBILE NUMBER :<b>" + (mno + "<br/>"));
+                 document.write("<b>TELEPHONE NUMBER:<b>" + (tno + "<br/>"));
+                document.write("<b>PROFESSION :<b>" + (prof+ "<br/>"));
                 }
            </script>
     </div>
