@@ -15,17 +15,25 @@ body {
     overflow-x: hidden;
 }
 
-#navcontent {
-    font-size: small;
-    font-family: 'Quicksand';
+.heading {
+    background-image: url(/assets/images/main-bg.png);
+    background-size: cover;
+    background-position: center;
 }
 
 #button {
-    background-color: #a9b33b;
+    background-color: #aab33c;
+    width: 150px;
+    height: 30px;
 }
 
 #button:hover {
-    background-color: #838b26;
+    transform: scale(1.1);
+}
+
+#best {
+    font-family: myfont;
+    font-size: 80px;
 }
 
 #bestcontainer p {
@@ -33,47 +41,25 @@ body {
 
 }
 
-#best {
-    font-family: myfont;
-}
-
-#pre {
-    color: #ffffff;
-    font-size: larger;
-    font-weight: 700;
-    font-family: "Quicksand";
-}
-
-#pre1 {
-    color: #404142;
-    font-weight: 700;
-    font-family: "Quicksand";
-    text-align: center;
-}
-
 #bestcontainer {
-    margin-top: 200px;
-    position: absolute;
-
+    padding-left: 140px;
 }
 
-#page1 {
-    position: relative;
+.button2 {
+    background-color: #aab33c;
+    width: 150px;
+    height: 30px;
+    border: none;
 }
 
-#imgbg1 {
-    width: 100vw;
-}
+.pre1 {
+    font-size: 25px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quicksand";
 
-#page1 {
-    position: absolute;
-    top: 0px;
-
-}
-
-.col {
-    width: 15%;
-    height: 250px;
 }
 
 /*section 2*/
@@ -82,13 +68,14 @@ body {
     border-radius: 20px;
 }
 
-#content pre {
-    margin-top: 15px;
+#content p {
+    /* margin-top: 15px; */
     font-size: 25px;
     font-weight: bold;
     font-family: "Quicksand";
     text-align: center;
     align-items: center;
+    max-width: 45%;
 }
 
 .card img {
@@ -128,81 +115,19 @@ body {
 
 /*section 3*/
 
-#sec3para1 {
-    margin-left: 120px;
-    margin-top: 130px;
+#sec3content{
+text-transform: uppercase;
+font-weight: 700;
+font-family: "Quicksand";
+color:black;
+}
+#sec3img{
+    background-color: #e5e8c4;
 }
 
-#sec3para2 {
-    margin-left: 120px;
-    margin-top: 10px;
-}
-
-#sec3para3 {
-    margin-left: 120px;
-    margin-top: 5px;
-    font-size: smaller;
-}
-
-#sec3para4 {
-    margin-left: 120px;
-    margin-top: 5px;
-    font-size: smaller;
-}
-
-#sec3content1 {
-    font-family: "Quicksand";
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-left: 110px;
-    margin-top: 10px;
-}
-
-#sec3content2 {
-    font-family: "Quicksand";
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-left: -185px;
-    margin-top: 10px;
-}
-
-#sec3img1:hover {
+#sec3img:hover {
     transform: scale(1.1);
 }
-
-#sec3img2:hover {
-    transform: scale(1.1);
-}
-
-#sec3img1 {
-    width: 50px;
-    height: 50px;
-    border-radius: 6px;
-    background-color: #e5e8c4;
-    margin-top: 20px;
-    margin-left: 110px;
-}
-
-#sec3img2 {
-    width: 50px;
-    height: 50px;
-    border-radius: 6px;
-    background-color: #e5e8c4;
-    margin-top: 20px;
-    margin-left: -180px;
-}
-
-#mobile {
-    width: 300px;
-    height: 650px;
-    margin-left: 830px;
-    margin-top: -550px;
-}
-
 /*section 4*/
 
 #bacforsec4 {
@@ -214,9 +139,9 @@ body {
 
 #sec4comgraph {
     height: 500px;
-    width:400px;
-    margin-top:45px;
-    margin-left:200px;
+    width: 400px;
+    margin-top: 45px;
+    margin-left: 200px;
 
 }
 
@@ -254,16 +179,17 @@ body {
 #sec4btn {
     font-size: 13px;
     text-transform: uppercase;
-    color:white;
+    color: white;
     font-weight: 700;
     font-family: "Quicksand";
-    height:30px;
-    width:200px;
+    height: 30px;
+    width: 200px;
     background-color: #aab33c;
-    margin-left:1045px;
-    margin-top:30px;
+    margin-left: 1045px;
+    margin-top: 30px;
     border: none;
 }
-#sec4btn:hover{
+
+#sec4btn:hover {
     transform: scale(1.1);
 }
