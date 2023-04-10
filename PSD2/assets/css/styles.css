@@ -1,3 +1,12 @@
+/*media queries*/
+
+/* @media (max-width: 300px) {
+    .clickhere  .click {
+        width: 40%;
+        margin-bottom: 590px;
+    }
+} */
+
 /*section 1*/
 
 @font-face {
@@ -22,7 +31,7 @@ body {
     background-image: url(/Desktop/PSD2/assets/images/main-bg.png);
     background-size: cover;
     background-position: center;
-    min-height: 95vh;
+    min-height: 90vh;
 }
 
 /* navbar*/
@@ -323,12 +332,12 @@ td:nth-child(1) {
 /*section 6*/
 
 #sec6bg {
-    width: 100vw;
+    width: 100%;
     background-color: #f6f7eb;
-    height:250px;
+    height: 250px;
 }
 
-.centered {
+.clickhere {
     font-size: 150%;
     line-height: 46px;
     color: #404142;
@@ -350,4 +359,158 @@ td:nth-child(1) {
 .click:hover {
     color: #5f6517;
     border-bottom: 2px solid #5f6517;
+}
+
+/*cards*/
+
+.sec6card:hover {
+    transform: scale(1.1);
+    transition: ease-out;
+}
+
+#innercard {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fdffe9;
+    margin-left: 50px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 1;
+}
+
+#card6mainimg {
+    height: 238px;
+
+}
+
+#card6img2 {
+    background-color: #aab33c;
+    width: 75px;
+}
+
+#card6img2text {
+    flex: 1;
+
+}
+
+#sec6para {
+    margin-top: auto;
+    font-size: 13px;
+    color: #313132;
+    font-weight: 600;
+    font-family: "Quicksand";
+}
+
+.p6 {
+    font-size: 35px;
+    line-height: 46px;
+    color: #404142;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+.btn6 {
+    font-weight: 700;
+    font-family: "Quicksand";
+    line-height: 3px;
+    color: white;
+    width: 200px;
+    height: 40px;
+    background-color: #aab33c;
+    align-items: center;
+
+}
+
+.btn6:hover {
+    transform: scale(1.1);
+}
+
+/*section 7 footer region*/
+
+.footbackground {
+    background-image: url(/Desktop/PSD2/assets/images/footerbg.png);
+}
+
+.font-2 {
+    width: 260px;
+    height: 130px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #404142;
+    font-weight: 400;
+    font-family: "Quicksand";
+}
+
+.aboutus {
+    font-size: 70%;
+    color: #404142;
+    font-family: "Quicksand";
+    font-weight: 900;
+}
+
+.getintouch,
+.quick {
+    font-size: 70%;
+    color: #404142;
+    font-weight: 900;
+    font-family: "Quicksand";
+}
+
+.getintouch,
+.quicklinks {
+    color: black;
+    text-decoration: none;
+}
+
+.getintouch:hover,
+.quicklinks:hover {
+    color: #848d00;
+}
+
+.footbtn {
+    color: #ffffff;
+    background-color: #acb643;
+    font-size: small;
+    border: none;
+}
+
+.footbtn:hover {
+    background-color: #8b9429;
+    transform: scale(1.1);
+}
+
+#fav {
+    color: #a8b336;
+}
+
+#footform {
+    color: white;
+}
+
+.form-control {
+    border: none;
+    outline: 0px;
+}
+
+#formlabel {
+    background-color: #acb643;
+}
+
+#footdown {
+    background-color: #aab33c;
+}
+
+#footdowntext {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: "Quicksand";
+}
+
+#footdowntext:hover {
+    color: #313132;
+    cursor: pointer;
+    transform: scale(1.1);
 }
