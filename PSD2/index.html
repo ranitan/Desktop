@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BOOTSTRAP</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <script src="PSD2/Desktop/PSD2/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link rel="stylesheet" href="assets\css\styles.css">
   <script src="https://kit.fontawesome.com/d509f79d02.js" crossorigin="anonymous"></script>
@@ -26,15 +26,15 @@
       <nav id="navv" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"></a>
-          <button class="navbar-toggler" id="toggle-button" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarrNav" aria-controls="navbarrNav" aria-expanded="false"
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarrNav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-3">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#navbarrNav">HOME</a>
+                <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#content">PLANS</a>
@@ -97,7 +97,7 @@
       <!--card1-->
 
       <a href=""
-        class=" col-md-3 text-decoration-none card text-center border-0 ms-5 ms-lg-0 me-1 mt-3 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
+        class=" col-md-6 text-decoration-none card text-center border-0 ms-5 ms-lg-0 me-1 mt-3 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
         id="card-color" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3  m-2">
@@ -113,7 +113,7 @@
       <!--card2-->
 
       <a href=""
-        class="col-md-3 text-decoration-none  card text-center border-0 ms-5 me-1 mt-3 me-sm-2 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
+        class="col-md-6 text-decoration-none  card text-center border-0 ms-5 me-1 mt-3 me-sm-2 me-lg-3 me-md-1 mt-sm-3 mt-md-3 "
         id="card-color" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3 m-2">
@@ -129,7 +129,7 @@
       <!--card3-->
 
       <a href=""
-        class="col-md-3 text-decoration-none  card text-center border-0 ms-5 me-1 me-lg-3 mt-3 me-md- mt-sm-3 mt-md-3"
+        class="col-md-6 text-decoration-none  card text-center border-0 ms-5 me-1 me-lg-3 mt-3 me-md- mt-sm-3 mt-md-3"
         id="card-color" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3 m-2">
@@ -145,7 +145,7 @@
       <!--card4-->
 
       <a href=""
-        class="col-md-3 card text-decoration-none  text-center border-0 ms-5 me-1 me-md-1 me-lg-3 me-sm-3 mt-3 mt-sm-3 mt-md-3"
+        class="col-md-6 card text-decoration-none  text-center border-0 ms-5 me-1 me-md-1 me-lg-3 me-sm-3 mt-3 mt-sm-3 mt-md-3"
         id="card-color" style="max-width:min-content;">
         <div class="card-body p-0">
           <div class="col-md-3  m-2">
@@ -165,15 +165,17 @@
   <div class="container">
     <div class="row">
       <div class="col-10 col-sm-10 col-md-6 col-lg-7 mt-5  ms-auto">
-        <h4 class="sec3.1 mt-5 ">ANALYZE ANY KIND OF REAL </h4>
-        <h4 class="sec3.2 mt-n5"> ESTATE INVESTMENT</h4>
-        <p class="sec3para small mt-4">iAnalyzeREI can handle all sorts of income-producing Real Estate (Multifamily,
+        <h4 id="sec3analyse" class="sec3.1 mt-5 ">ANALYZE ANY KIND OF REAL </h4>
+        <h4 id="sec3analyse" class="sec3.2 mt-n5"> ESTATE INVESTMENT</h4>
+        <p id="sec3analyse" class="sec3para small mt-4">iAnalyzeREI can handle all sorts of income-producing Real Estate
+          (Multifamily,
           commercial,
           plexes,<br>
           etc.). Moreover, the reports produced by iAnalyzeREI are well-illustrated to accurately pinpoint the<br>
           advantages of living in a plex rather than renting an apartment.</p>
 
-        <p class="sec3para small"> Multi-family or commercial properties can also be analyzed, regardless of their
+        <p id="sec3analyse" class="sec3para small"> Multi-family or commercial properties can also be analyzed,
+          regardless of their
           size,
           thanks to<br> special features that adapt to the building's type. For a residential lease,
           you should enter the<br> number of rooms, the apartment’s surface, the rent, included services,
@@ -411,7 +413,7 @@
 
     <!--section 7 footer section-->
 
-    <footer class="footbackground mt-5">
+    <footer id="footerfullclass" class="footbackground mt-5">
       <div class="container-fluid">
         <div class="row justify-content-lg-center">
           <div class="col-6 col-sm-3 col-md-2 mt-4">
@@ -423,7 +425,7 @@
             </div>
           </div>
 
-          <div class="col-6 col-sm-3 col-md-3  mt-4">
+          <div class="col-lg-3 col-sm-12 col-md-6  mt-4">
 
             <h6>GET IN TOUCH </h6>
             <div class=" ">
@@ -463,11 +465,11 @@
 
           <!--footer form-->
 
-          <div class="col-6 col-sm-3 col-md-2  mt-4">
-            <form id="f1" name="f1" action="" method="post" onsubmit=" return validate()">
+          <div class="col-lg-4 col-sm-12 col-md-2  mt-4">
+            <form id="f1" name="f1" action="" method="post" onsubmit=" return validate()" class="was-validated">
               <div class="input-group flex-nowrap mb-2" id="inputform">
                 <span class="input-group-text icon" id="formlabel"><i class="fa-solid fa-user" id="footform"></i></span>
-                <input type="text" name="username" class="form-control" placeholder="Username" max  length="15"
+                <input type="text" name="username" class="form-control" placeholder="Username" max length="15"
                   minlength="5" required>
               </div>
               <div class="input-group flex-nowrap mb-2" id="inputform">

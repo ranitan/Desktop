@@ -1,162 +1,7 @@
-/*media queries*/
-
-@media only screen and (max-width: 678px) {
-    #sec1realestate {
-        font-size: small;
-        padding-right: 30px;
-    }
-
-    #best {
-        font-size: x-small;
-    }
-
-    #sec1button2 {
-        width: 100px;
-        margin-bottom: 20px;
-
-    }
-
-    #sec2content {
-        font-size: small;
-        line-height: 18px;
-    }
-
-    .sec3mob {
-        display: none;
-    }
-
-    #imgph {
-        display: none;
-    }
-
-    #clickhere {
-        margin-top: -150px;
-        font-size: medium;
-    }
-
-    #sec4pre1 {
-        text-align: center;
-    }
-
-    .sec4para1 {
-        text-align: center;
-    }
-
-    #sec4btn {
-        width: 162px;
-    }
-
-    #card6 {
-        padding-top: 30px;
-        margin-left: 10px;
-    }
-
-    #p6 {
-        font-size: medium;
-    }
-
-    #btn6 {
-        width: 120px;
-        height: 30px;
-        font-size: small;
-    }
-
-    #footdowntext {
-        font-size: small;
-        margin-left: px;
-    }
-
-    #basefoottext {
-        font-size: small;
-    }
-}
-
-@media only screen and (min-width:700px) and (max-width:1440px) {
-    #sec1realestate {
-        font-size: small;
-        line-height: 22px;
-        padding-right: 30px;
-    }
-
-    #best {
-        font-size: x-small;
-    }
-
-    .card {
-        padding-left: 10px;
-    }
-
-    #sec1button2 {
-        width: 100px;
-
-    }
-
-    #clickhere {
-        margin-top: -150px;
-    }
-
-    #sec2content {
-        font-size: small;
-        line-height: 18px;
-    }
-
-    #sec1button2 {
-        font-size: small;
-
-    }
-
-    #bacforsec4 {
-        width: 101%;
-    }
-
-    #imgph {
-        padding-right: 530px;
-        width: 830px;
-    }
-
-    #sec4btn {
-        width: 150px;
-        height: 45px;
-        font-size: small;
-        margin-left: -800px;
-        display: none;
-
-    }
-
-    #card6img2 {
-        display: none;
-    }
-
-    #card6img2text {
-        width: 100px;
-        height: 75px;
-    }
-
-    #p6 {
-        font-size: medium;
-    }
-
-    #btn6 {
-        font-size: x-small;
-        width: 120px;
-    }
-
-    #inputform {
-        width: 200px;
-    }
-}
-
 form .error {
     color: red;
-    font-size:small;
+    font-size: small;
 
-}
-
-span{
-    color: red;
-}
-
-#f1{
 }
 
 /*section 1*/
@@ -665,4 +510,232 @@ td:nth-child(1) {
     color: #313132;
     cursor: pointer;
     transform: scale(1.1);
+}
+
+/*media queries*/
+
+
+
+@media only screen and (min-width:1024px) and (max-width:1440px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #sec1realestate {
+        font-size: small;
+        line-height: 22px;
+        padding-right: 30px;
+    }
+
+    .card {
+        padding-left: 10px;
+    }
+
+    #sec1button2 {
+        width: 100px;
+
+    }
+
+    #clickhere {
+        margin-top: -150px;
+    }
+
+    #sec2content {
+        font-size: small;
+        line-height: 18px;
+    }
+
+    #sec1button2 {
+        font-size: small;
+
+    }
+
+    #bacforsec4 {
+        width: 101%;
+    }
+
+    #imgph {
+        padding-right: 330px;
+        width: 800px;
+    }
+
+    #sec4btn {
+        width: 150px;
+        height: 45px;
+        font-size: small;
+        margin-left: -800px;
+        display: none;
+
+    }
+
+    #card6img2text {
+        width: 100px;
+        height: 75px;
+    }
+
+    #p6 {
+        font-size: medium;
+    }
+
+    #btn6 {
+        font-size: x-small;
+        width: 120px;
+    }
+
+    #inputform {
+        width: 200px;
+    }
+
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 500px) {
+    .heading {
+        width: 400px;
+    }
+
+    #sec1realestate {
+        font-size: small;
+        padding-right: 30px;
+    }
+
+    #sec1button2 {
+        display:none;
+
+
+    }
+
+    #best {
+        font-size: 2px;
+    }
+
+    #sec2content {
+        margin-left: 30px;
+        font-size: small;
+        line-height: 18px;
+        margin-bottom: 50px;
+    }
+
+    .sec3mob {
+        display: none;
+    }
+
+    #imgph {
+        display: none;
+    }
+
+    #clickhere {
+        margin-top: -150px;
+        font-size: medium;
+    }
+
+    #sec4pre1 {
+        margin-left: 30px;
+        font-size: small;
+    }
+
+    .sec4para1 {
+        text-align: center;
+    }
+
+    #sec4btn {
+        display: none;
+
+    }
+
+    #card6 {
+        padding-top: 30px;
+        margin-left: 10px;
+    }
+
+    #card6img2 {
+        display: none;
+    }
+
+    #p6 {
+        font-size: medium;
+    }
+
+    #btn6 {
+        width: 120px;
+        height: 30px;
+        font-size: small;
+    }
+
+    #footdowntext {
+        font-size: small;
+        margin-left: px;
+    }
+
+    #inputform {
+        width: 170px;
+        margin-left: -10px;
+    }
+
+    #basefoottext {
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width:501px) and (max-width:769px) {
+    #imgph {
+        display: none;
+    }
+
+    #card6img2 {
+        display: none;
+    }
+
+    .sec3mob {
+        display: none;
+    }
+
+    #sec4btn {
+        display: none;
+
+    }
+
+    #sec1realestate {
+        font-size: small;
+        padding-right: 30px;
+    }
+
+    #sec1button2 {
+        font-size: small;
+    }
+
+    #sec2content {
+        margin-left: 30px;
+        font-size: small;
+        line-height: 18px;
+        margin-bottom: 50px;
+    }
+
+    #sec3analyse {
+        text-align: center;
+        margin-right: -300px;
+    }
+
+    .sec3content {
+        display: none;
+    }
+
+    #sec3img {
+        display: none;
+    }
+
+    #sec4pre1 {
+        margin-left: -190px;
+    }
+
+    .sec4para1 {
+        margin-left: -190px;
+    }
+
+    #clickhere {
+        margin-top: -130px;
+    }
+    #inputform{
+        width:200px;
+    }
 }
