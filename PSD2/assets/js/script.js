@@ -1,33 +1,43 @@
-function validate() {
-    var username = document.f1.username.value;
-    var email = document.f1.email.value;
-    var phonenum = document.f1.phonenum.value;
-    var comments = document.f1.comments.value;
-    var status = false;
 
-    if (username.length < 1)
-     {
-        document.write("please enter username with maximum 10 words");
-        status = false;
+
+$(document).ready(function () {
+    $("#f1").validate({
+    rules: {
+        'username': {
+            required: true,
+            minlength: 2,
+            maxlength: 15,
+            pattern: /^[A-Za-z ]+$/
+        },
+        'phonenum': {
+            required: true,
+            minlength: 10,
+            pattern: /^[0-9]{10}$/
+        },
+        'email': {
+            required: true,
+            email: true,
+            pattern: /^[a-z0-9]+@[a-z]+\.[a-z]{2,4}$/
+        }
+    },
+    messages: {
+        'username': {
+            required: "Please enter a Username.",
+            minlength: "Username is too small",
+            maxlength: "Username is too large",
+            pattern: "Username must have alpabets"
+        },
+        'phonenum': {
+            required: " Please enter valid Mobile number.",
+            minlength: " Mobile number must have 10 digits",
+            pattern: "Match correct mobile format"
+        },
+    
+        'email': {
+            required: " Please enter Email address",
+            email: " Please enter a valid email address",
+            pattern: " E-mail address should be in proper format"
+        }
     }
-    elseif(email == null)
-    {
-        document.write("please enter the email address");
-        status = false;
-    }
-    elseif(phonenum.length == null)
-    {
-        document.write("please enter the phone number");
-        status = false;
-    }
-    elseif(comments == null)
-    {
-        document.write("please give your valuable comments");
-        status = false;
-    } 
-    elseif(username,email,phonenum,comments!=null)
-    {
-        document.write("THANK YOU FOR VISITING OUR WEBSITE!..");
-    }
-    return status;
-}  
+    });
+    });
